@@ -1,0 +1,64 @@
+<html>
+<head><title>arrays</title></head>
+<body>
+    <p>
+        How to declare the arrays ?
+        <h4 id="Q1"></h4>
+    </p>
+    <hr>
+    <p>
+        How to fetch the first element of the array ?
+        <h4 id="Q2"></h4>
+    </p>
+    <hr>
+    <p>
+        How to fetch the second element of the array ?
+        <h4 id="Q3"></h4>
+    </p>
+    <hr>
+    <p>
+        How to fetch the third element of the array ?
+        <h4 id="Q4"></h4>
+    </p>
+    <hr>
+    <p>
+        How to get the length of the array ?
+        <h4 id="Q5"></h4>
+    </p>
+    <hr>
+    <p>
+        How to loop the array array ?
+        <h4 id="Q6"></h4>
+    </p>
+</body>
+<script>
+    var names=["haydi","carter","Ellie"];
+    console.log(names);
+    document.getElementById("Q1").innerHTML=names;
+var firstname=names[0];
+console.log(firstname);
+document.getElementById("Q2").innerHTML=firstname;
+var secondname=names[1];
+console.log( secondname);
+document.getElementById("Q3").innerHTML=secondname;
+var thirdname=names[2];
+console.log( thirdname);
+document.getElementById("Q4").innerHTML=thirdname;
+
+var namelength=names.length;
+console.log(namelength);
+document.getElementById("Q5").innerHTML=namelength;
+
+var arrayval="";
+for ( i = 0; i < names.length; i++) {
+    console.log(names[i]);
+    arrayval=arrayval+names[i]+"<br>"
+    
+}
+document.getElementById("Q6").innerHTML=arrayval;
+
+    </script>
+
+
+
+</html>
